@@ -9,6 +9,7 @@ let temp = 0;
 let cityInput = document.querySelector("#city-input");
 
 document.querySelector("#search-btn").addEventListener("click", function () {
+  event.preventDefault();
   citySearched(cityInput.value);
 });
 
