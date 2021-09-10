@@ -1,0 +1,108 @@
+header {
+  color: rgb(198, 158, 152);
+  margin-top: 10px;
+  opacity: 0.6;
+}
+form {
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+  border-radius: 1px;
+  padding: 1px 3px;
+  background-color: rgb(198, 158, 152);
+}
+form {
+}
+#city-input {
+  margin-bottom: 8px;
+}
+footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+.option {
+  display: inline;
+}
+.container {
+  text-align: center;
+  font-family: monospace;
+}
+.card {
+  border: 5px solid rgb(198, 158, 152);
+}
+
+.city-entered {
+  letter-spacing: 6px;
+}
+.day-weather-icon {
+  margin: 0 auto;
+  width: 120px;
+}
+#display-date {
+  font-size: 15px;
+  position: absolute;
+  left: 5px;
+}
+.current-time {
+  font-size: 15px;
+  position: absolute;
+  right: 5px;
+}
+
+.current-day-temp {
+  text-align: center;
+}
+.img-col {
+  text-align: center;
+}
+
+.card {
+  background-color: rgb(198, 158, 152);
+}
+.middle-card {
+  background-color: rgba(128, 128, 128, 0.2);
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 3px;
+}
+.footer-icon {
+  width: 30px;
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 35px;
+}
+.creator-link {
+  color: black;
+  text-decoration: none;
+}
+.fal {
+  color: rgba(198, 158, 152, 1);
+}
+.creator-link:hover {
+  color: rgba(198, 158, 152, 1);
+  font-weight: bolder;
+}
+#fahrenheit-link {
+  text-decoration: none;
+  color: black;
+}
+#celsius-link {
+  text-decoration: none;
+  color: black;
+}
+#fahrenheit-link:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: rgba(198, 158, 152, 1);
+}
+#celsius-link:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: rgba(198, 158, 152, 1);
+}
+#description {
+  display: inline;
+  text-decoration: underline;
+  text-decoration-line: overline;
+}

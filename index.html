@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mersey</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="src/script.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/b7e8c47aeb.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  <div class="container">
+      <header>weather app</header>
+      <!-- searchbar -->
+      <form class="search-city">
+        <div class="mb-3 searchForm">
+          <label placeholder="Enter city name here" class="form-label"></label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter city name here"
+            id="city-input"
+          /><button type="submit" id="search-btn">
+          search
+        </button>
+      </form>
+      <p class="option">or</p>
+      <button id="location-btn">use your location</button>
+    </div> 
+    <!-- top card end -->
+
+      <!-- current temperature info -->
+      <div class="card">
+     <div class="middle-card" id="current-weather-into">
+      <div class="temp-info">
+      <div class="current-date"><p id="display-date">display current date here</p></div>
+      <p class=current-time></p>
+      <br/> <br/>
+      <img src="img/sun.png" class="day-weather-icon">
+      <h1 class="city-entered" id="location-name">Sydney
+      </h1>
+      <p class="country">Australia</p>
+      <!-- <img src="img/sun.png" class="day-weather-icon"> -->
+       <span class="current-day-temp" id="temperature"><h2>
+         19</h2></span
+                ><span class="units">
+                  <a href="#!" id="celsius-link">°C</a> |
+                  <a href="#!" id="fahrenheit-link">°F</a>          
+        </span>
+        <br/><br/>
+        
+          <i class="fal fa-star-exclamation"></i>&nbsp<p class=temp-description id="description" >feels like</p>
+          </div>
+          <br/>
+          <!-- <img src="img/moon.png" class="night-weather-icon" width=50px/>
+          <h3 class="current-night-temp">
+          4°C
+          </h3> -->
+      </div> <!-- temp info end  -->
+     </div> <!-- container end -->
+  <footer>
+    <small>created by <a target="_blank"class="creator-link" href="https://www.instagram.com/merseyburr/">Mersey</a></small>
+    <br/>
+     <img src="img/creator.jpg" class="footer-icon"></footer>
+  </footer>
+    </body>
+</html>
