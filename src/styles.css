@@ -1,0 +1,208 @@
+body {
+  color: black;
+  font-size: 15px;
+  font-family: "Cairo", sans-serif;
+  background-image: url(../img/weather-background.png);
+  background-attachment: fixed;
+}
+
+header {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(198, 158, 152);
+  margin-top: 10px;
+  margin-bottom: 8px;
+  opacity: 0.9;
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
+  /* list-style-image: url("sqpurple.gif"); */
+}
+h2 {
+  font-family: "Cairo", sans-serif;
+  font-weight: 600 !important;
+}
+footer {
+  font-family: "Cairo", sans-serif;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px;
+  opacity: 0.5;
+}
+
+#description {
+  font-size: 18px;
+  text-decoration: overline;
+}
+#weather-logo {
+  background-color: rgba(128, 128, 128, 0.2);
+  opacity: 0.6;
+}
+#display-date {
+  padding: 3px;
+  margin: 0;
+}
+#fahrenheit-link {
+  text-decoration: none;
+  color: black;
+}
+#celsius-link {
+  text-decoration: none;
+  color: black;
+}
+#fahrenheit-link:hover {
+  color: rgb(151, 72, 60);
+  text-decoration: underline;
+  font-weight: bold;
+  transition: ease-in-out;
+}
+#celsius-link:hover {
+  color: rgb(151, 72, 60);
+  text-decoration: underline;
+  font-weight: bold;
+  transition: ease-in-out;
+}
+.header-img {
+  width: 100px;
+  opacity: 0.6;
+}
+.h-app {
+  font-family: "Cairo", sans-serif;
+}
+
+.heading-wrap {
+  margin-top: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+}
+
+.form-group {
+  font-family: "Cairo", sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.current-date {
+  font-family: "Cairo", sans-serif;
+  font-size: 15px;
+}
+.city-entered {
+  font-family: "Cairo", sans-serif;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.middle-card {
+  font-family: "Cairo", sans-serif;
+  font-size: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 16px;
+  padding: 10px;
+  background: linear-gradient(
+    219deg,
+    rgba(198, 158, 160, 0.8) 29%,
+    rgb(187, 154, 136) 60%
+  );
+  border: 1px solid rgb(112, 134, 158);
+  border-radius: 8px;
+}
+.condition-details {
+  font-family: "Cairo", sans-serif;
+  font-size: 15px;
+}
+.btn {
+  color: black !important;
+  background-color: rgb(198, 158, 152) !important;
+  border: 1px solid rgb(112, 134, 158) !important;
+  border-radius: 1px !important;
+  transition: ease-in-out;
+  font-size: 15px !important;
+  padding: 3px 9px !important;
+  text-align: center !important;
+  margin-top: 8px !important;
+}
+
+.btn:hover {
+  color: white !important;
+  background-color: rgb(112, 134, 158) !important;
+  border-radius: 1px !important;
+  transition: ease-in-out;
+  font-size: 15px !important;
+  padding: 3px 9px !important;
+  text-align: center !important;
+  margin-top: 5px !important;
+}
+
+.current-icon {
+  font-family: "Cairo", sans-serif;
+  font-size: 60px;
+  font-weight: none;
+}
+.all-icrons {
+  visibility: hidden;
+}
+.row {
+  text-align: center;
+}
+.temp-feel {
+  font-family: "Cairo", sans-serif;
+}
+
+.WeatherForecast {
+  font-family: "Cairo", sans-serif;
+  text-align: center;
+}
+.forecast-icon {
+  padding: 3px;
+  font-size: 30px;
+}
+.preview-day {
+  font-family: "Cairo", sans-serif;
+}
+.day {
+  font-family: "Cairo", sans-serif;
+  text-decoration: underline;
+}
+
+.fa-moon {
+  font-size: 12px;
+}
+.page-updated {
+  font-family: "Cairo", sans-serif;
+  font-size: smaller;
+  margin: 0;
+}
+.source-link {
+  color: black;
+}
+.host-link {
+  color: black;
+}
+.source-link:hover {
+  color: rgb(151, 72, 60);
+  text-decoration: none;
+  transition: ease-in-out;
+  font-weight: bold;
+}
+
+.host-link:hover {
+  color: rgb(151, 72, 60);
+  text-decoration: none;
+  transition: ease-in-out;
+  font-weight: bold;
+}
+.footer-icon {
+  width: 32px;
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 35px;
+}
+.footer-icon:hover {
+  border: 2px solid rgb(198, 158, 152);
+  transition: ease-in-out;
+}
