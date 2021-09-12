@@ -4,67 +4,161 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mersey</title>
-    <link rel="stylesheet" href="src/styles.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script src="src/script.js" defer></script>
+    <title>🌡Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">    <script src="src/script.js" defer=""></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b7e8c47aeb.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://kit.fontawesome.com/b7e8c47aeb.js" crossorigin="anonymous"></script>
   </head>
   <body>
-  <div class="container">
-      <header>weather app</header>
-      <!-- searchbar -->
-      <form class="search-city">
-        <div class="mb-3 searchForm">
-          <label placeholder="Enter city name here" class="form-label"></label>
-          <input
+    <div class="container">
+   <div id="weather-logo">
+	     <div class= heading-wrap><img class="header-img"src="img/sun.png"></div>
+      </div>
+    <header>🌡<br/><br/><br/><div class="h-app">WEATHER APP</div></header>
+    <!-- searchbar -->
+  <form>
+    <div class="form-group">
+    <label placeholder="Enter city name here" class="form-label"></label>
+    <input
             type="text"
-            class="form-control"
-            placeholder="Enter city name here"
+            class="form-control search-bar"
+            placeholder="city name. . ."
             id="city-input"
-          /><button type="submit" id="search-btn">
-          search
-        </button>
-      </form>
-      <p class="option">or</p>
-      <button id="location-btn">use your location</button>
-    </div> 
-    <!-- top card end -->
+          />
+  <button id="search-btn" type="submit" class="btn btn-primary shadow-lg">search</button> or <button type="submit" class="btn btn-primary shadow-lg" type="submit" id="location-btn">use your location</button>
+  </div>
+  </form>
+    <!-- weather card -->
+    <div class="middle-card shadow-lg" id="current-weather-into">
+      <div class="current-date">
+        <p id="display-date">display current date here</p>
+        <p class="current-time"></p>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h1 class="city-entered" id="location-name">Sydney</h1>
+          <p class="country">Australia</p>
+          <span class="row">
+            <span class="col-1">
+            <ul>
+              <li><i class="fal fa-humidity"></i></li>
+              <li><i class="fal fa-wind"></i></li>
+              <li><i class="fal fa-lightbulb-exclamation"></i></li>
+          </ul>
+          </span>
+            <span class="col-3">
+            <ul>
+              <li>humidity</li>
+              <li>wind</li>
+              <li>feels</li>
+          </ul>
+          </span>
+          <span class="col-6">
+            <ul>
+              <li class="li-humid">0</li>
+              <li class="li-wind">0</li>
+              <li class="temp-feel"></li>
+              <li></li>
+          </ul>
+          </span>
+          </span>
+        </div>
+        <div class="col-6">
+          <span class="current-day-temp" id="temperature"><p><i id="icon" class="fal fa-sun current-icon"></i></p><h2>19</h2></span>
+          <span class="units">
+            <a href="#!" id="celsius-link">°C</a> |
+            <a href="#!" id="fahrenheit-link">°F</a>
+            <br/><br/>
+            <p class="temp-description" id="description">weather decription</p>
+          </span>
+        </div>
+      </div>
+      <hr>
+      <div class="WeatherForecast row">
+        <div class="col preview-day">
+          <div id="d1Day"class="col day day1">day1</div>
+          <div><i class="forecast-icon fal fa-cloud-showers"></i>
+            </div>
+          <span id="d1MaxTemp"class="col day1-max-temp">0° |</span>
+          <span id="d1MinTemp"class="col day1-min-temp"><i class="fal fa-moon"></i> 0°</span>
+        </div>
+        <div class="col preview-day">
+          <div class="col day">day2</div>
+          <div><i class="forecast-icon fal fa-cloud-showers"></i>
+            </div>
+          <span class="col day-max-temp">0° |</span>
+          <span class="col day-min-temp"><i class="fal fa-moon"></i> 0°</span>
+        </div>
+        <div class="col preview-day">
+          <div class="col day">day3</div>
+          <div><i class="forecast-icon fal fa-cloud-showers"></i>
+            </div>
+          <span class="col day-max-temp">0° |</span>
+          <span class="col day-min-temp"><i class="fal fa-moon"></i> 0°</span>
+        </div>
+        <div class="col preview-day">
+          <div class="col day">day4</div>
+         <div><i class="forecast-icon fal fa-cloud-showers"></i>
+            </div>
+          <span class="col day-max-temp">0° |</span>
+          <span class="col day-min-temp"><i class="fal fa-moon"></i> 0°</span>
+        </div>
+        <div class="col preview-day">
+          <div class="col day">day5</div>
+          <div><i class="forecast-icon fal fa-cloud-showers"></i>
+            </div>
+          <span class="col day-max-temp">0° |</span>
+          <span class="col day-min-temp"><i class="fal fa-moon"></i> 0°</span>
+        </div>
+      </div><!-- upcoming weahter preview END -->
+      <br/>
+      <small><p class="page-updated">Last updated: <span id="date"></span></p></small>
+      <!-- row end -->
+    </div>
+    <footer>
+      <small
+        >Open-source code on GitHub, by
+        <a
+          target="_blank"
+          class="source-link"
+          href="https://github.com/Mersey94/first-repository"
+          >Mersey</a
+        ></small>
+        <br />
+        <a
+          target="_blank"
+          class="source-link"
+          href="https://www.instagram.com/merseyburr/"
+          ><img src="img/creator.jpg" class="footer-icon" />
+      </a>
+      <br/>
+      <small
+        >Hosted on 
+        <a
+          target="_blank"
+          class="host-link"
+          href="https://app.netlify.com/"
+          >Netlify</a
+        ></small>
+    </footer>
+    
+    <!-- weather card END -->
 
-      <!-- current temperature info -->
-      <div class="card">
-     <div class="middle-card" id="current-weather-into">
-      <div class="temp-info">
-      <div class="current-date"><p id="display-date">display current date here</p></div>
-      <p class=current-time></p>
-      <br/> <br/>
-      <img src="img/sun.png" class="day-weather-icon">
-      <h1 class="city-entered" id="location-name">Sydney
-      </h1>
-      <p class="country">Australia</p>
-      <!-- <img src="img/sun.png" class="day-weather-icon"> -->
-       <span class="current-day-temp" id="temperature"><h2>
-         19</h2></span
-                ><span class="units">
-                  <a href="#!" id="celsius-link">°C</a> |
-                  <a href="#!" id="fahrenheit-link">°F</a>          
-        </span>
-        <br/><br/>
-        
-          <i class="fal fa-star-exclamation"></i>&nbsp<p class=temp-description id="description" >feels like</p>
-          </div>
-          <br/>
-          <!-- <img src="img/moon.png" class="night-weather-icon" width=50px/>
-          <h3 class="current-night-temp">
-          4°C
-          </h3> -->
-      </div> <!-- temp info end  -->
-     </div> <!-- container end -->
-  <footer>
-    <small>Open-source code, by <a target="_blank"class="creator-link" href="https://github.com/Mersey94/first-repository">Mersey</a></small>
-    <br/>
-     <img src="img/creator.jpg" class="footer-icon"></footer>
-  </footer>
-    </body>
+    <!-- continer END -->
+  </body>
 </html>
