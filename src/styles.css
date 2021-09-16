@@ -34,7 +34,7 @@ footer {
 }
 
 #description {
-  font-size: 18px;
+  font-size: 19px;
   text-decoration: overline;
 }
 #weather-logo {
@@ -46,21 +46,23 @@ footer {
   margin: 0;
 }
 #fahrenheit-link {
+  font-size: 19px;
   text-decoration: none;
   color: black;
 }
 #celsius-link {
+  font-size: 19px;
   text-decoration: none;
   color: black;
 }
 #fahrenheit-link:hover {
-  color: rgb(151, 72, 60);
+  color: rgb(90, 109, 129) !important;
   text-decoration: underline;
   font-weight: bold;
   transition: ease-in-out;
 }
 #celsius-link:hover {
-  color: rgb(151, 72, 60);
+  color: rgb(90, 109, 129) !important;
   text-decoration: underline;
   font-weight: bold;
   transition: ease-in-out;
@@ -93,48 +95,51 @@ footer {
   font-size: 15px;
 }
 .city-entered {
+  font-size: 45px;
   font-family: "Cairo", sans-serif;
   font-weight: 600;
   letter-spacing: 3px;
 }
 .middle-card {
   font-family: "Cairo", sans-serif;
-  font-size: 15px;
-  max-width: 600px;
+  font-size: 16px;
+  max-width: 700px;
+
   margin: 0 auto;
   margin-top: 16px;
   padding: 10px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     219deg,
     rgba(198, 158, 160, 0.8) 29%,
-    rgb(187, 154, 136) 60%
-  );
-  border: 1px solid rgb(112, 134, 158);
+    rgba(187, 154, 136) 60%
+  ); */
+  border: 2px solid rgb(112, 134, 158);
   border-radius: 8px;
 }
 .condition-details {
   font-family: "Cairo", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
 }
 .btn {
-  color: black !important;
-  background-color: rgb(198, 158, 152) !important;
+  color: white !important;
+  background-color: rgb(112, 134, 158) !important;
   border: 1px solid rgb(112, 134, 158) !important;
-  border-radius: 1px !important;
+  border-radius: 16px !important;
   transition: ease-in-out;
   font-size: 15px !important;
-  padding: 3px 9px !important;
+  padding: 6px 12px !important;
   text-align: center !important;
   margin-top: 8px !important;
 }
 
 .btn:hover {
-  color: white !important;
-  background-color: rgb(112, 134, 158) !important;
-  border-radius: 1px !important;
+  color: rgb(112, 134, 158) !important;
+  font-weight: bold !important;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  border-radius: 16px !important;
   transition: ease-in-out;
   font-size: 15px !important;
-  padding: 3px 9px !important;
+  padding: 6px 12px !important;
   text-align: center !important;
   margin-top: 5px !important;
 }
@@ -145,6 +150,7 @@ footer {
   font-weight: none;
 }
 .all-icrons {
+  border-radius: 50px;
   visibility: hidden;
 }
 .row {

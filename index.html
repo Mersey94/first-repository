@@ -36,7 +36,7 @@
     <label placeholder="Enter city name here" class="form-label"></label>
     <input
             type="text"
-            class="form-control search-bar"
+            class="form-control search-bar shadow-lg"
             placeholder="city name. . ."
             id="city-input"
           />
@@ -79,7 +79,10 @@
           </span>
         </div>
         <div class="col-6">
-          <span class="current-day-temp" id="temperature"><p><i id="icon" class="fal fa-sun current-icon"></i></p><h2>19</h2></span>
+          <span class="current-day-temp" id="temperature"><p>
+            <!-- <i id="icon" class="fal fa-sun current-icon"></i> -->
+            <img id="icon">
+          </p><h2>19</h2></span>
           <span class="units">
             <a href="#!" id="celsius-link">°C</a> |
             <a href="#!" id="fahrenheit-link">°F</a>
@@ -89,42 +92,15 @@
         </div>
       </div>
       <hr>
-      <div class="WeatherForecast row">
-        <div class="col preview-day">
+          <!-- weather forecast  -->
+      <div id="forecast" class="WeatherForecast row">
+        <!-- <div class="col-2 preview-day">
           <div id="d1Day"class="col day day1">day1</div>
           <div><i class="forecast-icon fal fa-cloud-showers"></i>
             </div>
-          <span id="d1MaxTemp"class="col day1-max-temp">0° |</span>
-          <span id="d1MinTemp"class="col day1-min-temp"><i class="fal fa-moon"></i> 0°</span>
-        </div>
-        <div class="col preview-day">
-          <div class="col day">day2</div>
-          <div><i class="forecast-icon fal fa-cloud-showers"></i>
-            </div>
-          <span class="col day-max-temp">0° |</span>
-          <span class="col day-min-temp"><i class="fal fa-moon"></i> 0°</span>
-        </div>
-        <div class="col preview-day">
-          <div class="col day">day3</div>
-          <div><i class="forecast-icon fal fa-cloud-showers"></i>
-            </div>
-          <span class="col day-max-temp">0° |</span>
-          <span class="col day-min-temp"><i class="fal fa-moon"></i> 0°</span>
-        </div>
-        <div class="col preview-day">
-          <div class="col day">day4</div>
-         <div><i class="forecast-icon fal fa-cloud-showers"></i>
-            </div>
-          <span class="col day-max-temp">0° |</span>
-          <span class="col day-min-temp"><i class="fal fa-moon"></i> 0°</span>
-        </div>
-        <div class="col preview-day">
-          <div class="col day">day5</div>
-          <div><i class="forecast-icon fal fa-cloud-showers"></i>
-            </div>
-          <span class="col day-max-temp">0° |</span>
-          <span class="col day-min-temp"><i class="fal fa-moon"></i> 0°</span>
-        </div>
+          <span id="forecastMaxTemp"class="col day-max-temp">0° |</span>
+          <span id="forecastMinTemp"class="col day-min-temp"><i class="fal fa-moon"></i> 0°</span>
+        </div> -->
       </div><!-- upcoming weahter preview END -->
       <br/>
       <small><p class="page-updated">Last updated: <span id="date"></span></p></small>
