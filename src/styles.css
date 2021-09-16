@@ -2,10 +2,12 @@ body {
   margin: auto;
   color: black;
   font-weight: bold !important;
+  background-image: fill;
   font-size: 15px;
   font-family: "Cairo", sans-serif;
   background-image: url(../img/weather-background.png);
   background-attachment: fixed;
+  background-size: contain;
 }
 
 header {
