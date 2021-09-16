@@ -16,7 +16,7 @@
     />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">    <script src="src/script.js" defer=""></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet"><script src="src/script.js" defer=""></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script
       src="https://kit.fontawesome.com/b7e8c47aeb.js"
@@ -27,20 +27,20 @@
   <body>
     <div class="container">
    <div id="weather-logo">
-	     <div class= heading-wrap><img class="header-img"src="img/sun.png"></div>
       </div>
-    <header>🌡<br/><br/><br/><div class="h-app">WEATHER APP</div></header>
+    <header>🌡<br/>WEATHER APP</header>
     <!-- searchbar -->
   <form>
     <div class="form-group">
     <label placeholder="Enter city name here" class="form-label"></label>
     <input
             type="text"
+            autocomplete="off"
             class="form-control search-bar shadow-lg"
             placeholder="city name. . ."
             id="city-input"
           />
-  <button id="search-btn" type="submit" class="btn btn-primary shadow-lg">search</button> or <button type="submit" class="btn btn-primary shadow-lg" type="submit" id="location-btn">use your location</button>
+  <button id="search-btn" type="submit" class="btn  shadow-lg">search</button><span class="btn-option"> or </span> <button type="submit" class="btn shadow-lg" type="submit" id="location-btn">use your location</button>
   </div>
   </form>
     <!-- weather card -->
@@ -73,7 +73,6 @@
               <li class="li-humid">0</li>
               <li class="li-wind">0</li>
               <li class="temp-feel"></li>
-              <li></li>
           </ul>
           </span>
           </span>
@@ -81,7 +80,7 @@
         <div class="col-6">
           <span class="current-day-temp" id="temperature"><p>
             <!-- <i id="icon" class="fal fa-sun current-icon"></i> -->
-            <img id="icon">
+            <img id="icon" class="bouncy">
           </p><h2>19</h2></span>
           <span class="units">
             <a href="#!" id="celsius-link">°C</a> |
@@ -104,8 +103,8 @@
       </div><!-- upcoming weahter preview END -->
       <br/>
       <small><p class="page-updated">Last updated: <span id="date"></span></p></small>
+      </div>
       <!-- row end -->
-    </div>
     <footer>
       <small
         >Open-source code on GitHub, by
@@ -120,7 +119,7 @@
           target="_blank"
           class="source-link"
           href="https://www.instagram.com/merseyburr/"
-          ><img src="img/creator.jpg" class="footer-icon" />
+          ><img src="img/creator.jpg" class="footer-icon bouncy" />
       </a>
       <br/>
       <small

@@ -232,9 +232,9 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `<div class="col preview-day">
-          <div id="d1Day"class="col day day1">${formatDay(forecastDay.dt)}</div>
+          <div id="d1Day"class="col day">${formatDay(forecastDay.dt)}</div>
           <div><div id="forecastIcon">
-            <img class="icon" src="http://openweathermap.org/img/wn/${
+            <img class="icon forecast-icon" src="http://openweathermap.org/img/wn/${
               forecastDay.weather[0].icon
             }@2x.png" />
           </div></div>
